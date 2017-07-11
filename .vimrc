@@ -87,7 +87,7 @@ let g:syntastic_javascript_checkers = ['eslint']
 
 
 """""""""""""""""""""""""""""""""""""
-"""""""        General        """""""
+"""""""        Tab size       """""""
 """""""""""""""""""""""""""""""""""""
 autocmd Filetype json setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
@@ -111,6 +111,9 @@ set cmdheight=1
 " show line number
 set number
 
+" Show command cadidates
+set wildmenu
+
 " No beep No flash
 set noeb vb t_vb=
 
@@ -129,4 +132,5 @@ colorscheme PaperColor
 set background=light
 " Airline theme
 let g:airline_theme='papercolor'
-
+" Airline using power line font
+let g:airline_powerline_fonts = 1
