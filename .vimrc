@@ -35,11 +35,14 @@ Plug 'tpope/vim-fugitive'
 
 
 """""""""""""""""""""""""""""""""""""
-"""""""         Git           """""""
+"""""""       Airline         """""""
 """""""""""""""""""""""""""""""""""""
 
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'edkolev/tmuxline.vim'
+
+
 """""""""""""""""""""""""""""""""""""
 """""""    General Plugins    """""""
 """""""""""""""""""""""""""""""""""""
