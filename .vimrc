@@ -59,7 +59,7 @@ Plug 'kien/ctrlp.vim'
 
 " Color Theme
 " Plug 'morhetz/gruvbox'
-" Plug 'NLKNguyen/papercolor-theme'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'tyrannicaltoucan/vim-quantum'
 " Plug 'kristijanhusak/vim-hybrid-material'
 " Plug 'w0ng/vim-hybrid'
@@ -109,19 +109,19 @@ map <C-n> :NERDTreeToggle<CR>
 " Color Theme
 set t_Co=256
 
-" set background=light
-set background=dark
+set background=light
+" set background=dark
 
-" colorscheme PaperColor
+colorscheme PaperColor
 " colorscheme gruvbox
-colorscheme quantum
+" colorscheme quantum
 " colorscheme hybrid_material
 " colorscheme hybrid
 
 
 " Airline theme
-" let g:airline_theme='papercolor'
-let g:airline_theme='minimalist'
+let g:airline_theme='papercolor'
+" let g:airline_theme='minimalist'
 " Airline using power line font
 let g:airline_powerline_fonts = 1
 
