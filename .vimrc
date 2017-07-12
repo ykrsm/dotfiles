@@ -135,9 +135,10 @@ let g:airline_powerline_fonts = 1
 """""""    'YouCompleteMe'    """""""
 """""""""""""""""""""""""""""""""""""
 " Change popup menu color for non selected items
-highlight Pmenu ctermfg=lightgrey ctermbg=black guifg=lightgray guibg=black
+highlight Pmenu ctermfg=lightgrey ctermbg=black " guifg=lightgray guibg=black
 " Change popup menu color for selected item
-highlight PmenuSel ctermfg=white ctermbg=gray guifg=#ffffff guibg=#000000
+highlight PmenuSel ctermfg=white ctermbg=gray " guifg=#ffffff guibg=#000000
+
 
 
 
@@ -181,3 +182,4 @@ set noeb vb t_vb=
 
 " spell check on commit message z= to show candidates
 autocmd FileType gitcommit setlocal spell
+
