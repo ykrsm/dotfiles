@@ -139,7 +139,8 @@ highlight Pmenu ctermfg=lightgrey ctermbg=black " guifg=lightgray guibg=black
 " Change popup menu color for selected item
 highlight PmenuSel ctermfg=white ctermbg=gray " guifg=#ffffff guibg=#000000
 
-
+" Disable preview window when selecting candiate
+set completeopt-=preview
 
 
 """""""""""""""""""""""""""""""""""""
