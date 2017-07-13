@@ -89,8 +89,6 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let g:syntastic_debug = 4
-
 let g:syntastic_javascript_checkers = ['eslint']
 
 
@@ -114,9 +112,9 @@ set t_Co=256
 set background=light
 " set background=dark
 
-colorscheme PaperColor
+" colorscheme PaperColor
 " colorscheme gruvbox
-" colorscheme quantum
+colorscheme quantum
 " colorscheme hybrid_material
 " colorscheme hybrid
 
