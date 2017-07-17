@@ -24,11 +24,11 @@ Plug 'scrooloose/syntastic'
 " Plug 'pangloss/vim-javascript'
 Plug 'othree/yajs.vim'
 " React
-" Plug 'mxw/vim-jsx'
+Plug 'mxw/vim-jsx'
 
 
 
-"""""""         Git           """""""
+""""""         Git           """""""
 
 Plug 'tpope/vim-fugitive'
 
@@ -91,8 +91,7 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = ['eslint']
 
-
-"""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""
 """""""       'NERDTree'      """""""
 """""""""""""""""""""""""""""""""""""
 
@@ -163,7 +162,7 @@ autocmd Filetype java setlocal ts=4 sts=4 sw=4
 autocmd Filetype html setlocal ts=4 sts=4 sw=4
 autocmd Filetype css setlocal ts=4 sts=4 sw=4
 
-
+" Convert tabs to spaces
 
 """""""""""""""""""""""""""""""""""""
 """""""        General        """""""
