@@ -25,7 +25,8 @@ Plug 'scrooloose/syntastic'
 Plug 'othree/yajs.vim'
 " React
 Plug 'mxw/vim-jsx'
-
+" riot.js
+Plug 'ryym/vim-riot'
 
 
 """"""         Git           """""""
