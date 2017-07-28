@@ -163,7 +163,13 @@ autocmd Filetype java setlocal ts=4 sts=4 sw=4
 autocmd Filetype html setlocal ts=4 sts=4 sw=4
 autocmd Filetype css setlocal ts=4 sts=4 sw=4
 
-" Convert tabs to spaces
+
+
+"""""""""""""""""""""""""""""""""""""
+"""""""     File Extention    """""""
+"""""""""""""""""""""""""""""""""""""
+au BufReadPost *.tag set syntax=html
+
 
 """""""""""""""""""""""""""""""""""""
 """""""        General        """""""
