@@ -114,13 +114,13 @@ set t_Co=256
 set background=light
 " set background=dark
 
-colorscheme PaperColor
+colorscheme quantum
 " colorscheme gruvbox
 " colorscheme quantum
 " colorscheme hybrid_material
 " colorscheme hybrid
 
-
+ 
 " Airline theme
 let g:airline_theme='papercolor'
 " let g:airline_theme='minimalist'
