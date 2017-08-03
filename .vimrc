@@ -93,6 +93,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
 
 """"""""""""""""""""""""""""""""""""
 """""""       'NERDTree'      """""""
@@ -114,7 +115,7 @@ set t_Co=256
 set background=light
 " set background=dark
 
-colorscheme quantum
+colorscheme papercolor
 " colorscheme gruvbox
 " colorscheme quantum
 " colorscheme hybrid_material
