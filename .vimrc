@@ -61,9 +61,9 @@ Plug 'kien/ctrlp.vim'
 """""""     Color Themes    """""""
 
 " Color Theme
- Plug 'morhetz/gruvbox'
+" Plug 'morhetz/gruvbox'
 " Plug 'NLKNguyen/papercolor-theme'
-" Plug 'tyrannicaltoucan/vim-quantum'
+Plug 'tyrannicaltoucan/vim-quantum'
 " Plug 'kristijanhusak/vim-hybrid-material'
 " Plug 'w0ng/vim-hybrid'
 
@@ -117,8 +117,12 @@ set t_Co=256
 set background=dark
 
 " colorscheme papercolor
- colorscheme gruvbox
-" colorscheme quantum
+" colorscheme gruvbox
+
+" Par quantum README
+" set termguicolors
+colorscheme quantum
+
 " colorscheme hybrid_material
 " colorscheme hybrid
 
@@ -197,4 +201,7 @@ set noeb vb t_vb=
 
 " spell check on commit message z= to show candidates
 autocmd FileType gitcommit setlocal spell
+
+	 let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
+	 let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
 
