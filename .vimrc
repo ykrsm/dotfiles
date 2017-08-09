@@ -61,9 +61,9 @@ Plug 'kien/ctrlp.vim'
 """""""     Color Themes    """""""
 
 " Color Theme
-" Plug 'morhetz/gruvbox'
+ Plug 'morhetz/gruvbox'
 " Plug 'NLKNguyen/papercolor-theme'
-Plug 'tyrannicaltoucan/vim-quantum'
+" Plug 'tyrannicaltoucan/vim-quantum'
 " Plug 'kristijanhusak/vim-hybrid-material'
 " Plug 'w0ng/vim-hybrid'
 
@@ -113,12 +113,12 @@ map <C-n> :NERDTreeToggle<CR>
 " Color Theme
 set t_Co=256
 
-set background=light
-" set background=dark
+" set background=light
+set background=dark
 
 " colorscheme papercolor
-" colorscheme gruvbox
-colorscheme quantum
+ colorscheme gruvbox
+" colorscheme quantum
 " colorscheme hybrid_material
 " colorscheme hybrid
 
