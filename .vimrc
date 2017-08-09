@@ -11,7 +11,7 @@ call plug#begin('~/.vim/plugged')
 
 """""""      Autocomplete     """""""
 
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plug 'marijnh/tern_for_vim'
 
 
@@ -62,7 +62,7 @@ Plug 'kien/ctrlp.vim'
 
 " Color Theme
 " Plug 'morhetz/gruvbox'
-Plug 'NLKNguyen/papercolor-theme'
+" Plug 'NLKNguyen/papercolor-theme'
 Plug 'tyrannicaltoucan/vim-quantum'
 " Plug 'kristijanhusak/vim-hybrid-material'
 " Plug 'w0ng/vim-hybrid'
@@ -115,9 +115,9 @@ set t_Co=256
 set background=light
 " set background=dark
 
-colorscheme papercolor
+" colorscheme papercolor
 " colorscheme gruvbox
-" colorscheme quantum
+colorscheme quantum
 " colorscheme hybrid_material
 " colorscheme hybrid
 
@@ -145,6 +145,8 @@ highlight PmenuSel ctermfg=white ctermbg=gray " guifg=#ffffff guibg=#000000
 " Disable preview window when selecting candiate
 set completeopt-=preview
 
+" Use python3 
+let g:ycm_python_binary_path = '/usr/local/bin/python3'
 
 """""""""""""""""""""""""""""""""""""
 """""""     Key Binding       """""""
