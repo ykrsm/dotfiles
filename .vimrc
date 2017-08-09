@@ -63,8 +63,9 @@ Plug 'kien/ctrlp.vim'
 " Color Theme
 " Plug 'morhetz/gruvbox'
 " Plug 'NLKNguyen/papercolor-theme'
-Plug 'tyrannicaltoucan/vim-quantum'
+" Plug 'tyrannicaltoucan/vim-quantum'
 " Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'mkarmona/colorsbox'
 " Plug 'w0ng/vim-hybrid'
 
 
@@ -121,10 +122,10 @@ set background=dark
 
 " Par quantum README
 " set termguicolors
-colorscheme quantum
+"colorscheme quantum
 
 " colorscheme hybrid_material
-" colorscheme hybrid
+colorscheme colorsbox-material
 
  
 " Airline theme
