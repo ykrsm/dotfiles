@@ -13,6 +13,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plug 'marijnh/tern_for_vim'
+Plug 'artur-shaik/vim-javacomplete2'
 
 
 
@@ -63,9 +64,9 @@ Plug 'kien/ctrlp.vim'
 " Color Theme
 " Plug 'morhetz/gruvbox'
 " Plug 'NLKNguyen/papercolor-theme'
-" Plug 'tyrannicaltoucan/vim-quantum'
+Plug 'tyrannicaltoucan/vim-quantum'
 " Plug 'kristijanhusak/vim-hybrid-material'
-Plug 'mkarmona/colorsbox'
+" Plug 'mkarmona/colorsbox'
 " Plug 'w0ng/vim-hybrid'
 
 
@@ -122,10 +123,10 @@ set background=dark
 
 " Par quantum README
 " set termguicolors
-"colorscheme quantum
+colorscheme quantum
 
 " colorscheme hybrid_material
-colorscheme colorsbox-material
+" colorscheme colorsbox-material
 
  
 " Airline theme
@@ -153,6 +154,14 @@ set completeopt-=preview
 
 " Use python3 
 let g:ycm_python_binary_path = '/usr/local/bin/python3'
+
+
+"""""""""""""""""""""""""""""""""""""
+"""""""    Javacomplete2      """""""
+"""""""""""""""""""""""""""""""""""""
+" Required
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
 
 """""""""""""""""""""""""""""""""""""
 """""""     Key Binding       """""""
