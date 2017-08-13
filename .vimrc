@@ -234,8 +234,10 @@ set wildmenu
 " No beep No flash
 set noeb vb t_vb=
 
-" spell check on commit message z= to show candidates
+" spell check on commit message and *.md 
+" [z= to show candidates]
 autocmd FileType gitcommit setlocal spell
+au BufRead *.md setlocal spell
 
 " let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
 " let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
