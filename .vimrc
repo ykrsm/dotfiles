@@ -22,19 +22,19 @@ Plug 'artur-shaik/vim-javacomplete2'
 " Linting
 Plug 'scrooloose/syntastic'
 " Javascript
-Plug 'pangloss/vim-javascript'
+" Plug 'pangloss/vim-javascript'
 Plug 'othree/yajs.vim'
 " React
 Plug 'mxw/vim-jsx'
 " Plug 'maxmellon/vim-jsx-pretty'
 " riot.js
-Plug 'ryym/vim-riot'
+" Plug 'ryym/vim-riot'
 " Plug 'nicklasos/vim-jsx-riot'
 
 
 """"""         Git           """""""
 
-Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-fugitive'
 
 
 
@@ -53,21 +53,24 @@ Plug 'Raimondi/delimitMate'
 
 " NERDTree
 Plug 'scrooloose/nerdtree'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Ctrl P
 Plug 'kien/ctrlp.vim'
 
-
+" Icons
+" Plug 'ryanoasis/vim-devicons'
 
 """""""     Color Themes    """""""
 
 " Color Theme
 " Plug 'morhetz/gruvbox'
 " Plug 'NLKNguyen/papercolor-theme'
-Plug 'tyrannicaltoucan/vim-quantum'
+" Plug 'tyrannicaltoucan/vim-quantum'
 " Plug 'kristijanhusak/vim-hybrid-material'
 " Plug 'mkarmona/colorsbox'
 " Plug 'w0ng/vim-hybrid'
+Plug 't1mxg0d/vim-lucario'
 
 
 
@@ -113,7 +116,7 @@ map <C-n> :NERDTreeToggle<CR>
 """""""""""""""""""""""""""""""""""""
 
 " Color Theme
-set t_Co=256
+" set t_Co=256
 
 " set background=light
 set background=dark
@@ -123,7 +126,9 @@ set background=dark
 
 " Par quantum README
 " set termguicolors
-colorscheme quantum
+" colorscheme quantum
+
+colorscheme lucario
 
 " colorscheme hybrid_material
 " colorscheme colorsbox-material
@@ -138,6 +143,18 @@ let g:airline_powerline_fonts = 1
 
 " enable color support
 " set termguicolors
+
+
+
+"""""""""""""""""""""""""""""""""""""
+"""""""     Tweak Scheme      """""""
+"""""""""""""""""""""""""""""""""""""
+
+" To use Terminal.app's bg color
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
+highlight Directory ctermfg=blue
+highlight VertSplit ctermbg=none ctermfg=blue
 
 
 
@@ -161,6 +178,14 @@ let g:ycm_python_binary_path = '/usr/local/bin/python3'
 """""""""""""""""""""""""""""""""""""
 " Required
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
+
+"""""""""""""""""""""""""""""""""""""
+"""""""        Iconsa        """""""
+"""""""""""""""""""""""""""""""""""""
+set encoding=utf8
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h11
+let g:airline_powerline_fonts = 1
 
 
 """""""""""""""""""""""""""""""""""""
@@ -212,6 +237,7 @@ set noeb vb t_vb=
 " spell check on commit message z= to show candidates
 autocmd FileType gitcommit setlocal spell
 
-	 let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
-	 let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
+" let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
+" let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
+
 
