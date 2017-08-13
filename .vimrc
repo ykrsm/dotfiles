@@ -101,6 +101,8 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_python_checkers = ['pyflakes']
 " let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
 
+
+
 """"""""""""""""""""""""""""""""""""
 """""""       'NERDTree'      """""""
 """""""""""""""""""""""""""""""""""""
@@ -108,6 +110,8 @@ let g:syntastic_python_checkers = ['pyflakes']
 " Toggle NERDTree with ctrl n
 map <C-n> :NERDTreeToggle<CR>
 
+" Show hidden files
+let NERDTreeShowHidden=1
 
 
 
@@ -155,6 +159,9 @@ highlight Normal ctermbg=none
 highlight NonText ctermbg=none
 highlight Directory ctermfg=blue
 highlight VertSplit ctermbg=none ctermfg=blue
+highlight VertSplit ctermbg=none ctermfg=blue
+highlight StatusLine ctermbg=24
+highlight Search ctermfg=254 ctermbg=31
 
 
 
@@ -181,11 +188,11 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 
 """""""""""""""""""""""""""""""""""""
-"""""""        Iconsa        """""""
+"""""""        Icons         """""""
 """""""""""""""""""""""""""""""""""""
-set encoding=utf8
-set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h11
-let g:airline_powerline_fonts = 1
+" set encoding=utf8
+" set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h11
+" let g:airline_powerline_fonts = 1
 
 
 """""""""""""""""""""""""""""""""""""
@@ -218,6 +225,23 @@ set expandtab
 " au BufReadPost *.tag set syntax=html
 " au BufNewFile,BufRead *.tag setlocal ft=javascript
 
+
+
+"""""""""""""""""""""""""""""""""""""
+"""""""         Search        """""""
+"""""""""""""""""""""""""""""""""""""
+
+" Show vimgrep result in quickfix
+autocmd QuickFixCmdPost *grep* cwindow
+
+" Ignore case when no capitalized
+" Case sensitive when capitalized
+set smartcase
+
+" Highlight seach match
+set hlsearch
+
+
 """""""""""""""""""""""""""""""""""""
 """""""        General        """""""
 """""""""""""""""""""""""""""""""""""
@@ -238,6 +262,7 @@ set noeb vb t_vb=
 " [z= to show candidates]
 autocmd FileType gitcommit setlocal spell
 au BufRead *.md setlocal spell
+
 
 " let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
 " let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
