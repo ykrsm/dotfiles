@@ -34,7 +34,7 @@ Plug 'mxw/vim-jsx'
 
 """"""         Git           """""""
 
-" Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 
 
