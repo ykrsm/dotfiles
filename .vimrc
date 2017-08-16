@@ -65,12 +65,12 @@ Plug 'kien/ctrlp.vim'
 
 " Color Theme
 " Plug 'morhetz/gruvbox'
-" Plug 'NLKNguyen/papercolor-theme'
+Plug 'NLKNguyen/papercolor-theme'
 " Plug 'tyrannicaltoucan/vim-quantum'
 " Plug 'kristijanhusak/vim-hybrid-material'
 " Plug 'mkarmona/colorsbox'
 " Plug 'w0ng/vim-hybrid'
-Plug 't1mxg0d/vim-lucario'
+" Plug 't1mxg0d/vim-lucario'
 
 
 
@@ -122,17 +122,17 @@ let NERDTreeShowHidden=1
 " Color Theme
 " set t_Co=256
 
-" set background=light
-set background=dark
+set background=light
+" set background=dark
 
-" colorscheme papercolor
+colorscheme papercolor
 " colorscheme gruvbox
 
 " Par quantum README
 " set termguicolors
 " colorscheme quantum
 
-colorscheme lucario
+" colorscheme lucario
 
 " colorscheme hybrid_material
 " colorscheme colorsbox-material
@@ -155,13 +155,13 @@ let g:airline_powerline_fonts = 1
 """""""""""""""""""""""""""""""""""""
 
 " To use Terminal.app's bg color
-highlight Normal ctermbg=none
-highlight NonText ctermbg=none
-highlight Directory ctermfg=blue
-highlight VertSplit ctermbg=none ctermfg=blue
-highlight VertSplit ctermbg=none ctermfg=blue
-highlight StatusLine ctermbg=24
-highlight Search ctermfg=254 ctermbg=31
+" highlight Normal ctermbg=none
+" highlight NonText ctermbg=none
+" highlight Directory ctermfg=blue
+" highlight VertSplit ctermbg=none ctermfg=blue
+" highlight VertSplit ctermbg=none ctermfg=blue
+" highlight StatusLine ctermbg=24
+" highlight Search ctermfg=254 ctermbg=31
 
 
 
