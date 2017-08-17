@@ -21,12 +21,15 @@ Plug 'artur-shaik/vim-javacomplete2'
 
 " Linting
 Plug 'scrooloose/syntastic'
+
 " Javascript
-" Plug 'pangloss/vim-javascript'
-Plug 'othree/yajs.vim'
+Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
+" Plug 'othree/yajs.vim'
+
 " React
-Plug 'mxw/vim-jsx'
 " Plug 'maxmellon/vim-jsx-pretty'
+
 " riot.js
 " Plug 'ryym/vim-riot'
 " Plug 'nicklasos/vim-jsx-riot'
