@@ -20,7 +20,9 @@ Plug 'artur-shaik/vim-javacomplete2'
 """""""   Syntax Highlight    """""""
 
 " Linting
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
+Plug 'w0rp/ale'
+
 
 " Javascript
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
@@ -88,21 +90,45 @@ call plug#end()
 " let g:jsx_ext_required = 0
 
 
+
+"""""""""""""""""""""""""""""""""""""
+"""""""     'vim-airline'     """""""
+"""""""""""""""""""""""""""""""""""""
+" Airline theme
+let g:airline_theme='papercolor'
+" let g:airline_theme='minimalist'
+" Airline using power line font
+let g:airline_powerline_fonts = 1
+
+
+
+"""""""""""""""""""""""""""""""""""""
+"""""""        'ALE'          """""""
+"""""""""""""""""""""""""""""""""""""
+" Specify the linter for certain file types
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
+\}
+
+" Show errors info in vim-airline 
+let g:airline#extensions#ale#enabled = 1
+
+
 """""""""""""""""""""""""""""""""""""
 """""""     'Syntastic'       """""""
 """""""""""""""""""""""""""""""""""""
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_python_checkers = ['pyflakes']
-" let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+" 
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" 
+" let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_python_checkers = ['pyflakes']
+" " let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
 
 
 
@@ -141,11 +167,6 @@ colorscheme lucario
 " colorscheme colorsbox-material
 
  
-" Airline theme
-let g:airline_theme='papercolor'
-" let g:airline_theme='minimalist'
-" Airline using power line font
-let g:airline_powerline_fonts = 1
 
 
 " enable color support
