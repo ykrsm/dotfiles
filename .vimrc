@@ -11,7 +11,7 @@ call plug#begin('~/.vim/plugged')
 
 """""""      Autocomplete     """""""
 
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer --clang-completer' }
 Plug 'marijnh/tern_for_vim'
 Plug 'artur-shaik/vim-javacomplete2'
 
@@ -203,6 +203,9 @@ set completeopt-=preview
 " Use python3 
 let g:ycm_python_binary_path = '/usr/local/bin/python3'
 
+" C family language config
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+
 
 """""""""""""""""""""""""""""""""""""
 """""""    Javacomplete2      """""""
@@ -235,6 +238,7 @@ autocmd Filetype json setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 autocmd Filetype riot setlocal ts=2 sts=2 sw=2
 autocmd Filetype python setlocal ts=2 sts=2 sw=2
+autocmd Filetype c setlocal ts=2 sts=2 sw=2
 
 autocmd Filetype java setlocal ts=4 sts=4 sw=4
 autocmd Filetype html setlocal ts=4 sts=4 sw=4
