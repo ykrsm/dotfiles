@@ -8,3 +8,8 @@
 	template = /Users/yk/dotfiles/.commit_template
 [diff]
         tool = vimdiff
+[merge]
+        tool = vimdiff
+        conflictstyle = diff3
+[difftool]
+        prompt = false
