@@ -4,6 +4,7 @@
 [core]
 	excludesfile = /Users/yk/.gitignore
 	editor = vim
+	trustctime = false
 [commit]
 	template = /Users/yk/dotfiles/.commit_template
 [diff]
