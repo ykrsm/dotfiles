@@ -6,3 +6,5 @@
 	editor = vim
 [commit]
 	template = /Users/yk/dotfiles/.commit_template
+[diff]
+        tool = vimdiff
