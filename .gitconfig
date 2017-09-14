@@ -14,3 +14,5 @@
         conflictstyle = diff3
 [difftool]
         prompt = false
+[mergetool]
+	keepBackup = false
