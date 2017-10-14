@@ -237,13 +237,13 @@ imap jj <Esc>
 autocmd Filetype json setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 autocmd Filetype riot setlocal ts=2 sts=2 sw=2
-autocmd Filetype python setlocal ts=2 sts=2 sw=2
 autocmd Filetype c setlocal ts=2 sts=2 sw=2
 autocmd Filetype yml setlocal ts=2 sts=2 sw=2
 
 autocmd Filetype java setlocal ts=4 sts=4 sw=4
 autocmd Filetype html setlocal ts=4 sts=4 sw=4
 autocmd Filetype css setlocal ts=4 sts=4 sw=4
+autocmd Filetype python setlocal ts=4 sts=4 sw=4
 
 set expandtab
 
