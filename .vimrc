@@ -13,7 +13,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer --clang-completer' }
 Plug 'marijnh/tern_for_vim'
-Plug 'artur-shaik/vim-javacomplete2'
+" Plug 'artur-shaik/vim-javacomplete2'
 
 
 
@@ -226,8 +226,8 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 """""""     Key Binding       """""""
 """""""""""""""""""""""""""""""""""""
 
-" jj to excape
-imap jj <Esc>
+" jk to excape
+imap jk <Esc>
 
 
 """""""""""""""""""""""""""""""""""""
