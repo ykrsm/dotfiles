@@ -185,7 +185,7 @@ highlight Directory ctermfg=blue
 highlight VertSplit ctermbg=none ctermfg=blue
 highlight VertSplit ctermbg=none ctermfg=blue
 highlight StatusLine ctermbg=24
-highlight Search ctermfg=254 ctermbg=31
+highlight Search ctermfg=254 ctermbg=31 guibg=darkcyan guifg=white
 
 
 
