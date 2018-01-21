@@ -2,11 +2,11 @@
 	name = YukiKuroshima
 	email = yukikuro1993@gmail.com
 [core]
-	excludesfile = /Users/011163282/.gitignore
+	excludesfile = ~/.gitignore
 	editor = vim
 	trustctime = false
 [commit]
-	template = /Users/011163282/dotfiles/.commit_template
+	template = ~/dotfiles/.commit_template
 [diff]
         tool = vimdiff
 [merge]

@@ -39,7 +39,8 @@ Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
 
 """"""         Git           """""""
 
-Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 
 
