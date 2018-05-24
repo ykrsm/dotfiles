@@ -36,6 +36,9 @@ Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
 " Plug 'ryym/vim-riot'
 " Plug 'nicklasos/vim-jsx-riot'
 
+" Go
+Plug 'fatih/vim-go'
+
 
 """"""         Git           """""""
 
@@ -246,6 +249,7 @@ autocmd Filetype java setlocal ts=4 sts=4 sw=4
 autocmd Filetype html setlocal ts=4 sts=4 sw=4
 autocmd Filetype css setlocal ts=4 sts=4 sw=4
 autocmd Filetype python setlocal ts=4 sts=4 sw=4
+autocmd Filetype php setlocal ts=4 sts=4 sw=4
 
 set expandtab
 
