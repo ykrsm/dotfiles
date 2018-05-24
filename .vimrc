@@ -1,4 +1,4 @@
-""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""
 """""""        VimPlug        """""""
 """""""""""""""""""""""""""""""""""""
 
@@ -114,7 +114,7 @@ let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \}
 
-" Show errors info in vim-airline 
+" Show errors info in vim-airline
 let g:airline#extensions#ale#enabled = 1
 
 
@@ -124,19 +124,19 @@ let g:airline#extensions#ale#enabled = 1
 " set statusline+=%#warningmsg#
 " set statusline+=%{SyntasticStatuslineFlag()}
 " set statusline+=%*
-" 
+"
 " let g:syntastic_always_populate_loc_list = 1
 " let g:syntastic_auto_loc_list = 1
 " let g:syntastic_check_on_open = 1
 " let g:syntastic_check_on_wq = 0
-" 
+"
 " let g:syntastic_javascript_checkers = ['eslint']
 " let g:syntastic_python_checkers = ['pyflakes']
 " " let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
 
 
 
-""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""
 """""""       'NERDTree'      """""""
 """""""""""""""""""""""""""""""""""""
 
@@ -169,8 +169,6 @@ colorscheme lucario
 
 " colorscheme hybrid_material
 " colorscheme colorsbox-material
-
- 
 
 
 " enable color support
@@ -215,7 +213,7 @@ let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 """""""    Javacomplete2      """""""
 """""""""""""""""""""""""""""""""""""
 " Required
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
+" autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 
 """""""""""""""""""""""""""""""""""""
@@ -252,6 +250,13 @@ autocmd Filetype python setlocal ts=4 sts=4 sw=4
 autocmd Filetype php setlocal ts=4 sts=4 sw=4
 
 set expandtab
+
+"""""""""""""""""""""""""""""""""""""
+""" Visualize special characters """"
+"""""""""""""""""""""""""""""""""""""
+
+set list
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 
 
 """""""""""""""""""""""""""""""""""""
@@ -301,5 +306,9 @@ au BufRead *.md setlocal spell
 
 " let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
 " let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
+
+" Bug fix for hyper.js
+" dumping random clipborad text when vim is opended
+set t_RS=
 
 
