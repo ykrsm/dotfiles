@@ -188,9 +188,11 @@ highlight VertSplit ctermbg=none ctermfg=blue
 highlight VertSplit ctermbg=none ctermfg=blue
 highlight StatusLine ctermbg=24
 highlight Search ctermfg=254 ctermbg=31 guibg=darkcyan guifg=white
-
-
-
+" eol, extends, precedes
+highlight NonText ctermfg=darkgray
+" nbsp, tabs, trail
+highlight SpecialKey ctermfg=darkgray ctermbg=none
+        
 """""""""""""""""""""""""""""""""""""
 """""""    'YouCompleteMe'    """""""
 """""""""""""""""""""""""""""""""""""
@@ -256,7 +258,7 @@ set expandtab
 """""""""""""""""""""""""""""""""""""
 
 set list
-set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+set listchars=tab:‣\ ,trail:·,extends:»,precedes:«,nbsp:%
 
 
 """""""""""""""""""""""""""""""""""""
